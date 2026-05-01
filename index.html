@@ -12,7 +12,7 @@
 <body>
 
 <!-- ═══════ NAV ═══════ -->
-<nav id="navbar" class="transparent">
+<nav id="navbar">
   <div class="nav-inner">
     <a href="#" class="nav-logo">
       <img src="media/img/logo.webp" alt="Vitalis Pie" />
@@ -437,46 +437,16 @@
   </div>
 </footer>
 
-<!-- ═══════ MODAL AGENDAR CITA ═══════ -->
+<!-- ═══════ MODAL AGENDAR CITA (Calendly) ═══════ -->
 <div class="modal-overlay" id="citaModal">
   <div class="modal-box">
     <button class="modal-close" onclick="closeModal()">✕</button>
-    <h3>Agendar tu cita</h3>
-    <p class="modal-sub">Completa el formulario y nos pondremos en contacto contigo para confirmar.</p>
-
-    <div class="fg">
-      <label>Nombre completo</label>
-      <input type="text" placeholder="Tu nombre" />
+    <h3 class="modal-title">Agenda tu cita ahora</h3>
+    <p class="modal-sub">Selecciona el día y horario que mejor se adapte a ti. Te esperamos.</p>
+    <div class="calendly-container">
+      <!-- Reemplaza la URL de abajo con tu enlace de Calendly -->
+      <iframe src="https://calendly.com/tu-enlace-aqui" width="100%" height="500" frameborder="0"></iframe>
     </div>
-    <div class="fg">
-      <label>Teléfono / WhatsApp</label>
-      <input type="tel" placeholder="0987 000 000" />
-    </div>
-    <div class="fg">
-      <label>Servicio de interés</label>
-      <select>
-        <option value="">Selecciona un servicio…</option>
-        <option>Podología Pediátrica</option>
-        <option>Podología Geriátrica</option>
-        <option>Podología Deportiva</option>
-        <option>Manejo de Pie Diabético</option>
-        <option>Uñeros</option>
-        <option>Hongos (Onicomicosis)</option>
-        <option>Verrugas Plantares</option>
-        <option>Profilaxis Podológica</option>
-        <option>Crioterapia</option>
-        <option>Tratamientos con Láser</option>
-        <option>Plantillas Ortopédicas</option>
-        <option>Estudio Biomecánico</option>
-        <option>Terapia del Dolor</option>
-        <option>No sé / Consulta general</option>
-      </select>
-    </div>
-    <div class="fg">
-      <label>Mensaje adicional (opcional)</label>
-      <textarea placeholder="Cuéntanos brevemente tu caso…"></textarea>
-    </div>
-    <button class="modal-submit" onclick="submitForm()">Solicitar cita →</button>
   </div>
 </div>
 
