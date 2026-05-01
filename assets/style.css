@@ -69,7 +69,7 @@ nav.scrolled {
 /* ─── HERO ─── */
 .hero {
   min-height: 100vh;
-  background: var(--cream);
+  background: var(--green-pale);
   position: relative; overflow: hidden;
   display: flex; align-items: center;
 }
