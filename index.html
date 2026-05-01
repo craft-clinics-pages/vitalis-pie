@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vitalis Pie – Clínica Podológica Integral</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ═══════ NAV ═══════ -->
+<nav id="navbar" class="transparent">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <img src="media/img/logo.webp" alt="Vitalis Pie" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#especialidades">Especialidades</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="#" class="nav-cta" onclick="openModal(event)">
+      Agendar cita
+    </a>
+  </div>
+</nav>
+
+<!-- ═══════ HERO ═══════ -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-stripes"></div>
+  <div class="hero-content">
+
+    <!-- Left -->
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <span class="hero-eyebrow-line"></span>
+        Clínica Podológica Integral
+      </div>
+      <h1>
+        Ciencia y cuidado<br>
+        en cada <em>paso</em>
+      </h1>
+      <p class="hero-desc">
+        Tratamos los pies con la dedicación que merecen. Tecnología avanzada, 
+        atención personalizada y profesionales especializados a tu disposición.
+      </p>
+      <div class="hero-actions">
+        <a href="#" class="btn-hero-primary" onclick="openModal(event)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Agendar mi cita
+        </a>
+        <a href="#servicios" class="btn-hero-secondary">
+          Ver servicios
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num">10<span>+</span></div>
+          <div class="hero-stat-label">Años de experiencia</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">5<span>k+</span></div>
+          <div class="hero-stat-label">Pacientes atendidos</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">12<span></span></div>
+          <div class="hero-stat-label">Tratamientos disponibles</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right -->
+    <div class="hero-visual">
+      <div class="badge-gold">✦ Especialistas certificados</div>
+      <div class="hero-card">
+        <img class="hero-card-logo" src="media/img/logo.webp" alt="Vitalis Pie – Clínica Podológica Integral" />
+        <p class="hero-card-slogan">"Ciencia y cuidado en cada paso"</p>
+      </div>
+      <div class="badge-online">
+        <span class="dot-pulse"></span>
+        Citas disponibles hoy
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════ TRUST BAR ═══════ -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <span>Tratamientos certificados</span>
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <span>Horarios flexibles</span>
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      <span>Atención personalizada</span>
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      <span>Tecnología de vanguardia</span>
+    </div>
+    <div class="trust-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <span>Equipo especializado</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ SERVICIOS ═══════ -->
+<section class="section" id="servicios">
+  <div class="section-max">
+    <div class="section-header">
+      <div>
+        <div class="section-tag">Nuestros servicios</div>
+        <h2 class="section-title">Cuidado integral<br>para tus <em>pies</em></h2>
+      </div>
+      <p class="section-sub">
+        Contamos con todos los tratamientos necesarios para mantener la salud y bienestar de tus pies, desde problemas cotidianos hasta patologías complejas.
+      </p>
+    </div>
+
+    <div class="servicios-grid">
+
+      <div class="svc-card">
+        <div class="svc-icon">🦶</div>
+        <h3>Podología Pediátrica</h3>
+        <p>Cuidado especializado para los pies de los más pequeños, detectando y corrigiendo alteraciones desde temprana edad.</p>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">👴</div>
+        <h3>Podología Geriátrica</h3>
+        <p>Atención enfocada en las necesidades del pie del adulto mayor, mejorando su movilidad, confort y calidad de vida.</p>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">🏃</div>
+        <h3>Podología Deportiva</h3>
+        <p>Evaluación y tratamiento de lesiones podológicas en deportistas, optimizando el rendimiento y previniendo recidivas.</p>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">🩺</div>
+        <h3>Manejo de Pie Diabético</h3>
+        <p>Protocolo preventivo y terapéutico para pacientes diabéticos, reduciendo el riesgo de complicaciones graves.</p>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">💅</div>
+        <h3>Uñeros</h3>
+        <p>Tratamiento conservador y quirúrgico de uñas encarnadas, con técnicas modernas que minimizan el dolor y la recurrencia.</p>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">🔬</div>
+        <h3>Hongos (Onicomicosis)</h3>
+        <p>Diagnóstico y tratamiento efectivo de infecciones micóticas ungueales con protocolos clínicos actualizados.</p>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">🌿</div>
+        <h3>Verrugas Plantares</h3>
+        <p>Eliminación de verrugas mediante técnicas avanzadas, con seguimiento hasta la remisión completa.</p>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">✨</div>
+        <h3>Profilaxis Podológica</h3>
+        <p>Limpieza profunda, eliminación de callosidades, hidratación y cuidado preventivo para mantener tus pies sanos.</p>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">❄️</div>
+        <h3>Crioterapia</h3>
+        <p>Aplicación de nitrógeno líquido para el tratamiento de verrugas, queratosis y otras lesiones cutáneas del pie.</p>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">⚡</div>
+        <h3>Tratamientos con Láser</h3>
+        <p>Tecnología láser de última generación para tratar hongos, verrugas plantares y otras patologías con mínima invasividad.</p>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">🦿</div>
+        <h3>Plantillas Ortopédicas</h3>
+        <p>Diseño y elaboración de plantillas personalizadas para corregir alteraciones biomecánicas y aliviar dolencias.</p>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-icon">🧬</div>
+        <h3>Estudio Biomecánico</h3>
+        <p>Análisis completo de la marcha y la pisada para detectar desequilibrios posturales y prescribir tratamiento adecuado.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ ESPECIALIDADES ═══════ -->
+<section id="especialidades">
+  <div class="espec-inner">
+
+    <div>
+      <div class="section-tag">¿Por qué Vitalis Pie?</div>
+      <h2 class="section-title">Expertos que <em>entienden</em><br>el lenguaje de tus pies</h2>
+      <p class="section-sub">
+        Combinamos experiencia clínica, tecnología avanzada y un trato humano cercano para ofrecerte la mejor atención podológica.
+      </p>
+      <ul class="espec-list">
+        <li><span class="espec-dot"></span>Profesionales con especialización en podología clínica</li>
+        <li><span class="espec-dot"></span>Equipamiento de última generación</li>
+        <li><span class="espec-dot"></span>Protocolos de higiene y esterilización certificados</li>
+        <li><span class="espec-dot"></span>Diagnóstico integral en una sola consulta</li>
+        <li><span class="espec-dot"></span>Seguimiento continuo del paciente</li>
+        <li><span class="espec-dot"></span>Atención de todas las edades</li>
+      </ul>
+    </div>
+
+    <div class="espec-grid-cards">
+      <div class="espec-mini-card">
+        <div class="em">⚕️</div>
+        <h4>Diagnóstico preciso</h4>
+        <p>Evaluación clínica completa con herramientas de análisis podológico</p>
+      </div>
+      <div class="espec-mini-card">
+        <div class="em">💊</div>
+        <h4>Tratamiento integral</h4>
+        <p>Abordaje multidisciplinar adaptado a cada paciente</p>
+      </div>
+      <div class="espec-mini-card">
+        <div class="em">🔁</div>
+        <h4>Seguimiento continuo</h4>
+        <p>Acompañamiento hasta la recuperación completa y prevención de recaídas</p>
+      </div>
+      <div class="espec-mini-card">
+        <div class="em">🛡️</div>
+        <h4>Prevención activa</h4>
+        <p>Educación al paciente para el autocuidado y la salud podológica a largo plazo</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════ NOSOTROS ═══════ -->
+<section class="section" id="nosotros">
+  <div class="section-max">
+    <div style="text-align:center; max-width: 580px; margin: 0 auto 0;">
+      <div class="section-tag" style="justify-content:center;">Razones para elegirnos</div>
+      <h2 class="section-title" style="margin-bottom:12px;">Lo que nos hace <em>diferentes</em></h2>
+      <p class="section-sub" style="max-width:100%; text-align:center;">Nuestro compromiso va más allá de la consulta: queremos que camines con seguridad y bienestar cada día.</p>
+    </div>
+    <div class="nosotros-grid">
+      <div class="nosotros-card">
+        <div class="nosotros-num"><span>10</span>+</div>
+        <h4>Años de experiencia</h4>
+        <p>Una trayectoria sólida al servicio de la salud podológica en Ecuador.</p>
+      </div>
+      <div class="nosotros-card">
+        <div class="nosotros-num"><span>12</span></div>
+        <h4>Tratamientos disponibles</h4>
+        <p>Solución para cualquier afección del pie, desde la más simple a la más compleja.</p>
+      </div>
+      <div class="nosotros-card">
+        <div class="nosotros-num"><span>100</span>%</div>
+        <h4>Enfoque en el paciente</h4>
+        <p>Cada tratamiento se diseña de forma personalizada según las necesidades de cada persona.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CONTACTO ═══════ -->
+<section class="section" id="contacto">
+  <div class="section-max">
+    <div class="section-tag">Estamos aquí para ti</div>
+    <h2 class="section-title">Contáctanos y<br>agenda tu <em>cita</em></h2>
+
+    <div class="contacto-layout">
+
+      <div class="contacto-items">
+
+        <div class="contacto-card">
+          <div class="contacto-icon-box">📍</div>
+          <div>
+            <h4>Ubicación</h4>
+            <p>Quito, Ecuador<br><span style="font-size:13px; color:var(--text-light);">Consulta nuestra dirección exacta por WhatsApp</span></p>
+          </div>
+        </div>
+
+        <div class="contacto-card">
+          <div class="contacto-icon-box">📱</div>
+          <div>
+            <h4>WhatsApp</h4>
+            <p><a href="https://wa.me/593987149618" target="_blank">0987 149 618</a></p>
+          </div>
+        </div>
+
+        <div class="contacto-card">
+          <div class="contacto-icon-box">⏰</div>
+          <div>
+            <h4>Horario de atención</h4>
+            <p>Lun – Vie: 9:00 am – 6:00 pm<br>Sáb: 9:00 am – 2:00 pm</p>
+          </div>
+        </div>
+
+        <div class="contacto-card">
+          <div class="contacto-icon-box">✉️</div>
+          <div>
+            <h4>Correo electrónico</h4>
+            <p><a href="mailto:info@vitalispie.com">info@vitalispie.com</a></p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Horario + acciones -->
+      <div class="horario-box">
+        <h3>Horarios de atención</h3>
+
+        <div class="horario-row">
+          <span class="h-dia">Lunes – Viernes</span>
+          <span class="h-hora">9:00 am – 6:00 pm</span>
+        </div>
+        <div class="horario-row">
+          <span class="h-dia">Sábado</span>
+          <span class="h-hora">9:00 am – 2:00 pm</span>
+        </div>
+        <div class="horario-row">
+          <span class="h-dia">Domingo</span>
+          <span class="h-hora h-closed">Cerrado</span>
+        </div>
+        <div class="horario-row">
+          <span class="h-dia">Feriados</span>
+          <span class="h-hora h-closed">Consultar disponibilidad</span>
+        </div>
+
+        <div class="horario-btns">
+          <a
+            href="https://wa.me/593987149618?text=Hola%2C%20quiero%20agendar%20una%20cita%20en%20Vitalis%20Pie"
+            target="_blank"
+            class="btn-wa"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Escribir por WhatsApp
+          </a>
+          <a href="#" class="btn-cita-ghost" onclick="openModal(event)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Agendar cita online
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CÓMO LLEGAR ═══════ -->
+<section class="section" id="comollegar">
+  <div class="section-max">
+    <div class="section-tag">Ubicación</div>
+    <h2 class="section-title">Cómo <em>llegar</em></h2>
+    <p class="section-sub" style="margin-bottom:32px;">Encuéntranos fácilmente en Quito. Usa el mapa para obtener indicaciones.</p>
+    <div style="border-radius:24px; overflow:hidden; box-shadow:0 8px 32px rgba(26,77,46,0.12);">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.7604284792847!2d-78.5476990250354!3d-0.30865289968831117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMTgnMzEuMiJTIDc4wrAzMic0Mi41Ilc!5e0!3m2!1ses!2sec!4v1777609573508!5m2!1ses!2sec" width="100%" height="400" style="border:0; display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CTA FINAL ═══════ -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <div class="section-tag">Da el primer paso</div>
+    <h2>¿Listo para cuidar la salud de tus pies?</h2>
+    <p>Agenda tu cita hoy y descubre por qué somos la clínica podológica de referencia en Quito.</p>
+    <div class="cta-btns">
+      <a href="#" class="btn-cta-white" onclick="openModal(event)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Agendar mi cita
+      </a>
+      <a
+        href="https://wa.me/593987149618?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Vitalis%20Pie"
+        target="_blank"
+        class="btn-cta-outline"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="media/img/logo.webp" alt="Vitalis Pie" />
+      <p>Clínica Podológica Integral — ciencia y cuidado en cada paso. Profesionales especializados en la salud de tus pies en Quito, Ecuador.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Servicios</h5>
+      <ul class="footer-links">
+        <li><a href="#servicios">Podología Pediátrica</a></li>
+        <li><a href="#servicios">Podología Geriátrica</a></li>
+        <li><a href="#servicios">Podología Deportiva</a></li>
+        <li><a href="#servicios">Pie Diabético</a></li>
+        <li><a href="#servicios">Tratamientos con Láser</a></li>
+        <li><a href="#servicios">Plantillas Ortopédicas</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contacto</h5>
+      <ul class="footer-links">
+        <li><a href="https://wa.me/593987149618" target="_blank">📱 0987 149 618</a></li>
+        <li><a href="mailto:info@vitalispie.com">✉️ info@vitalispie.com</a></li>
+        <li><a href="#contacto">📍 Quito, Ecuador</a></li>
+        <li><a href="#contacto">⏰ Lun–Vie: 9am–6pm</a></li>
+        <li><a href="#contacto">⏰ Sáb: 9am–2pm</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Vitalis Pie – Clínica Podológica Integral. Todos los derechos reservados.</span>
+    <span>Diseño web por <a href="https://craftmarketing.agency/" target="_blank" style="color:rgba(255,255,255,0.45); text-decoration:none;"><strong>Craft Marketing Agency</strong></a></span>
+  </div>
+</footer>
+
+<!-- ═══════ MODAL AGENDAR CITA ═══════ -->
+<div class="modal-overlay" id="citaModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <h3>Agendar tu cita</h3>
+    <p class="modal-sub">Completa el formulario y nos pondremos en contacto contigo para confirmar.</p>
+
+    <div class="fg">
+      <label>Nombre completo</label>
+      <input type="text" placeholder="Tu nombre" />
+    </div>
+    <div class="fg">
+      <label>Teléfono / WhatsApp</label>
+      <input type="tel" placeholder="0987 000 000" />
+    </div>
+    <div class="fg">
+      <label>Servicio de interés</label>
+      <select>
+        <option value="">Selecciona un servicio…</option>
+        <option>Podología Pediátrica</option>
+        <option>Podología Geriátrica</option>
+        <option>Podología Deportiva</option>
+        <option>Manejo de Pie Diabético</option>
+        <option>Uñeros</option>
+        <option>Hongos (Onicomicosis)</option>
+        <option>Verrugas Plantares</option>
+        <option>Profilaxis Podológica</option>
+        <option>Crioterapia</option>
+        <option>Tratamientos con Láser</option>
+        <option>Plantillas Ortopédicas</option>
+        <option>Estudio Biomecánico</option>
+        <option>Terapia del Dolor</option>
+        <option>No sé / Consulta general</option>
+      </select>
+    </div>
+    <div class="fg">
+      <label>Mensaje adicional (opcional)</label>
+      <textarea placeholder="Cuéntanos brevemente tu caso…"></textarea>
+    </div>
+    <button class="modal-submit" onclick="submitForm()">Solicitar cita →</button>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
